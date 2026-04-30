@@ -1,3 +1,6 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import express from 'express';
 import cors from 'cors';
 import { fileURLToPath } from 'url';
@@ -30,6 +33,6 @@ app.get('/{*path}', (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 TaskFlow server running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🚀 TaskFlow server running on port ${PORT}`);
 });
