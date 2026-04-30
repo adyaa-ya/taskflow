@@ -1,12 +1,11 @@
 {
   "name": "taskflow",
   "version": "1.0.0",
-  "description": "Project Management App with Role-Based Access Control",
+  "description": "Project Management App",
   "main": "server.js",
   "type": "module",
   "scripts": {
-    ""start": "node --experimental-vm-modules server.js"",
-    "dev": "node --watch server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
